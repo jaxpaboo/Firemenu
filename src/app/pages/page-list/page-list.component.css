@@ -1,0 +1,15 @@
+.post-image img {
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.custom-mat-card.mat-card{
+  margin: 5px; 
+  padding: 5px;
+ }
+
+ .card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }

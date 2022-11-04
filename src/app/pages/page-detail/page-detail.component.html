@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      [src]="page.imagePath"
+      alt="{{ page.name }}"
+      class="img-responsive"
+      style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ page.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Fire Link <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">        
+        <li><a style="cursor: pointer;" (click)="onEditPage()">Edit Fire Link</a></li>
+        <li><a style="cursor: pointer;" (click)="onDeletePage()">Delete Fire Link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ page.url }}
+  </div>
+</div>
